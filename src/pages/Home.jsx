@@ -18,13 +18,13 @@ const Home = () => {
 
       <div
         className="home-container bg-gradient-to-r from-gray-800 via-black to-gray-800
-        text-gray-200 min-h-screen flex items-center justify-center overflow-hidden"
+        text-gray-200 min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12"
       >
-        <div className="text-center mt-6 px-4 sm:px-6 md:px-8 lg:px-12 w-full">
+        <div className="text-center mt-6 w-full">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
             Welcome to Wheels to Paradise
           </h2>
-          <div >
+          <div>
             <Hero />
           </div>
 
