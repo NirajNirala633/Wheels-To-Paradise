@@ -1,15 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/pages/**/*.jsx",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/src/pages/$1"
-    }
-  ]
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
+  }
+  
